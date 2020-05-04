@@ -1,0 +1,12 @@
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\bin\Release\UF0.gif
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\bin\Release\Save the Humans.exe
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\bin\Release\Save the Humans.pdb
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\MainWindow.baml
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\MainWindow.g.cs
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\App.g.cs
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\Save the Humans_MarkupCompile.cache
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\Save the Humans.g.resources
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\Save_the_Humans.Properties.Resources.resources
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\Save the Humans.csproj.GenerateResource.Cache
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\Save the Humans.exe
+C:\Users\David\Documents\Headfirst C#\Save the Humans\Save-the-Humans\Save the Humans\obj\Release\Save the Humans.pdb

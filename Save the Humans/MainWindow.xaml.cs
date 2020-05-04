@@ -56,6 +56,8 @@ namespace Save_the_Humans
                 humanCaptured = false;
                 startButton.Visibility = Visibility.Visible;
                 playArea.Children.Add(gameOverText);
+                gameOverText.Text = " GAME OVER ";
+                gameOverText.Visibility = Visibility.Visible;
             }
         }
 
@@ -79,15 +81,19 @@ namespace Save_the_Humans
             playArea.Children.Add(bluePortal);
             bluePortal.Visibility = Visibility.Hidden;
             playArea.Children.Add(target);
+            target.Visibility = Visibility.Visible;
             playArea.Children.Add(human);
+            human.Visibility = Visibility.Visible;
             enemyTimer.Start();
             targetTimer.Start();
+            Instructions.Visibility = Visibility.Visible;
         }
 
         private void AddEnemy()
         {
             ContentControl enemy = new ContentControl();
             enemy.Template = Resources["EnemyTemplate"] as ControlTemplate;
+
             AnimateEnemy(enemy, 0, playArea.ActualWidth - 100, "(Canvas.Left)");
             AnimateEnemy(enemy, random.Next((int)playArea.ActualHeight - 100),
                 random.Next((int)playArea.ActualHeight - 100), "(Canvas.Top)");

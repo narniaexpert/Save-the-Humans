@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("uf0.gif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("modulator.gif")]
 
 

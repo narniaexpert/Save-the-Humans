@@ -5,11 +5,12 @@
     <Window.Resources>
         <ControlTemplate x:Key="EnemyTemplate" TargetType="{x:Type ContentControl}">
             <Grid>
-                <MediaElement x:Name="SpaceshipGIF" Source="C:\Users\David\Documents\Headfirst C#\Save the Humans\Save the Humans\UF0.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                <MediaElement x:Name="SpaceshipGIF" Source="UF0.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
                     <MediaElement.OpacityMask>
-                        <ImageBrush ImageSource="C:\Users\David\Documents\Headfirst C#\Save the Humans\Save the Humans\UF0.gif"/>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./UF0.gif"/>
                     </MediaElement.OpacityMask>
                 </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24"/>
             </Grid>
         </ControlTemplate>
     </Window.Resources>
@@ -37,7 +38,7 @@
                     <GradientStop Color="#FF008181" Offset="1"/>
                 </LinearGradientBrush>
             </Canvas.Background>
-            <Ellipse x:Name="bluePortal" Height="50" Width="25">
+            <Ellipse x:Name="bluePortal" Height="50" Width="25" Visibility="Hidden">
                 <Ellipse.Fill>
                     <RadialGradientBrush>
                         <GradientStop Color="#FF0022FB" Offset="0"/>
@@ -45,12 +46,12 @@
                     </RadialGradientBrush>
                 </Ellipse.Fill>
             </Ellipse>
-            <StackPanel x:Name="human" Orientation="Vertical" MouseDown="human_MouseDown" Margin="7.5,7.5,0,0">
+            <StackPanel x:Name="human" Orientation="Vertical" MouseDown="human_MouseDown" Margin="7.5,7.5,0,0" Visibility="Hidden">
                 <Ellipse Fill="White" Height="10" Width="10"/>
                 <Rectangle Fill="White" Height="25" Width="10"/>
             </StackPanel>
-            <TextBlock x:Name="gameOverText" TextWrapping="Wrap" Text="Game Over" FontFamily="Press Start 2P" FontWeight="Bold" FontSize="100" Canvas.Left="41" Canvas.Top="217" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-            <Ellipse x:Name="target" Height="50" Canvas.Left="876" Canvas.Top="428" Width="25" MouseEnter="target_MouseEnter">
+            <TextBlock x:Name="gameOverText" TextWrapping="Wrap" Text="PRESS START" FontFamily="Press Start 2P" FontWeight="Bold" FontSize="72" Canvas.Left="95" Canvas.Top="218" VerticalAlignment="Center" Foreground="White" HorizontalAlignment="Center"/>
+            <Ellipse x:Name="target" Height="50" Canvas.Left="876" Canvas.Top="428" Width="25" MouseEnter="target_MouseEnter" Visibility="Hidden">
                 <Ellipse.Fill>
                     <RadialGradientBrush>
                         <GradientStop Color="#FFFB7E00" Offset="0"/>
@@ -59,8 +60,8 @@
                 </Ellipse.Fill>
             </Ellipse>
         </Canvas>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Drag the human into the orange poratl." VerticalAlignment="Top" Foreground="White" FontFamily="Press Start 2P" Height="19"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="118,121,118,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Press Start 2P" Height="19"><Run Text="Artwork "/><Run Text="©"/><Run Text=" Math Invaders 2019"/></TextBlock>
+        <TextBlock x:Name="Instructions" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Press Start 2P" Height="19" Visibility="Hidden"><Run Text="Drag the human into the orange porta"/><Run Text="l."/></TextBlock>
+        <TextBlock x:Name="Copyright" Grid.Column="1" HorizontalAlignment="Center" Margin="118,121,118,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Press Start 2P" Height="19"><Run Text="Artwork "/><Run Text="©"/><Run Text=" Math Invaders 2019"/></TextBlock>
 
     </Grid>
 </Window>

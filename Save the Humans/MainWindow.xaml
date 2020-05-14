@@ -13,6 +13,97 @@
                 <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24"/>
             </Grid>
         </ControlTemplate>
+        <ControlTemplate x:Key="Deep-Space-Explorer" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Deep-Space-Explorer-v3_14.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Deep-Space-Explorer-v3_14.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="4" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="5,0,0,15"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Intergalactic-Integrator" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Intergalactic-Integrator.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Intergalactic-Integrator.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="8" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="8,0,0,0"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Modulator" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Modulator.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Modulator.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="15" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="0"/>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="Radial-Rocket" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Radial-Rocket.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Radial-Rocket.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="16" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="5,0,0,12"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Root-Destroyer" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Root-Destroyer.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Root-Destroyer.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="23" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="0,0,0,5"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Round-Number" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Round-Number.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Round-Number.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="42" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="0,0,0,25"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Sonic-Sinusodial" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Sonic-Sinusodial.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Sonic-Sinusodial.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="4" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="0,0,0,25"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="UF0" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="UF0.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./UF0.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="8" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24"/>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Victory-Squared" TargetType="{x:Type ContentControl}">
+            <Grid>
+                <MediaElement x:Name="SpaceshipGIF" Source="Victory-Squared.gif"  Height="100" Width="100" LoadedBehavior="Manual" Loaded="SpaceshipGIF_Loaded" UnloadedBehavior="Manual" MediaEnded="SpaceshipGIF_MediaEnded">
+                    <MediaElement.OpacityMask>
+                        <ImageBrush ImageSource="pack://siteoforigin:,,,./Victory-Squared.gif"/>
+                    </MediaElement.OpacityMask>
+                </MediaElement>
+                <TextBlock x:Name="num" HorizontalAlignment="Center" TextWrapping="Wrap" Text="15" VerticalAlignment="Center" FontFamily="Press Start 2P" FontSize="24" Margin="0,0,0,5"/>
+            </Grid>
+        </ControlTemplate>
     </Window.Resources>
 
     <Grid x:Name="grid" Background="Black">

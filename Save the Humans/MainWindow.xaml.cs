@@ -92,7 +92,40 @@ namespace Save_the_Humans
         private void AddEnemy()
         {
             ContentControl enemy = new ContentControl();
-            enemy.Template = Resources["EnemyTemplate"] as ControlTemplate;
+
+            switch (random.Next(9)) //Randomize enemy type
+            {
+                case 0:
+                    enemy.Template = Resources["Deep-Space-Explorer"] as ControlTemplate;
+                    break;
+                case 1:
+                    enemy.Template = Resources["Intergalactic-Integrator"] as ControlTemplate;
+                    break;
+                case 2:
+                    enemy.Template = Resources["Modulator"] as ControlTemplate;
+                    break;
+                case 3:
+                    enemy.Template = Resources["Radial-Rocket"] as ControlTemplate;
+                    break;
+                case 4:
+                    enemy.Template = Resources["Root-Destroyer"] as ControlTemplate;
+                    break;
+                case 5:
+                    enemy.Template = Resources["Round-Number"] as ControlTemplate;
+                    break;
+                case 6:
+                    enemy.Template = Resources["Sonic-Sinusodial"] as ControlTemplate;
+                    break;
+                case 7:
+                    enemy.Template = Resources["UF0"] as ControlTemplate;
+                    break;
+                case 8:
+                    enemy.Template = Resources["Victory-Squared"] as ControlTemplate;
+                    break;
+                default:
+                    enemy.Template = Resources["EnemyTemplate"] as ControlTemplate;
+                    break;
+            }
 
             AnimateEnemy(enemy, 0, playArea.ActualWidth - 100, "(Canvas.Left)");
             AnimateEnemy(enemy, random.Next((int)playArea.ActualHeight - 100),
@@ -100,6 +133,7 @@ namespace Save_the_Humans
             playArea.Children.Add(enemy);
 
             enemy.MouseEnter += enemy_MouseEnter;
+            
         }
 
         void enemy_MouseEnter(object sender, MouseEventArgs e)
